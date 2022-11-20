@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/superStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="h1box">
+        <h1>Place Your Order Here!</h1>
+    </div>
+        <form action="/newOrder" method="post">
+            <fieldset>
+            <legend><div class="number">1</div> Your Info:</legend>
+            <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+            <label for="mail">Email:</label><br>
+        <input type="email" id="mail" name="email"><br>
+            <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phonenumber"><br>
+            <!-- <label for="address">Address:</label><br>
+            <textarea></textarea> -->
+        </fieldset>
+        <fieldset>
+            <legend><div class="number">2</div> Coffee Bean Region:</legend>
+            <input type="radio" value="colombian" name="coffee"><label>Columbian</label>
+            <input type="radio" value="ethopian" name="coffee"><label>Ethiopian</label><br>
+            <input type="radio" value="indian" name="coffee"><label>Indian</label>
+            <input type="radio" value="indonesian" name="coffee"><label>Indonesian</label>
+            <input type="radio" value="panamanian" name="coffee"><label>Panamanian</label>
+        </fieldset>
+        <fieldset>
+            <legend><div class="number">3</div> Size</legend>
+            <input type="radio" value="small" name="size"><label>Small</label>
+            <input type="radio" value="medium" name="size"><label>Medium</label>
+            <input type="radio" value="large" name="size"><label>Large</label>
+        </fieldset>
+            <fieldset>
+                <legend><div class="number">4</div> Cold Brew or Hot Drip?</legend>
+            <input type="radio" value="cold brew" name="temp"><label>Cold Brew</label>
+            <input type="radio" value="hot drip" name="temp"><label>Hot Drip</label><br>
+        </fieldset>
+        <fieldset>
+            <legend><div class="number">5</div> Flavor Swirls</legend>
+            <input type="checkbox" value="french vanilla" name="flavor"><label>French Vanilla</label><br>
+            <input type="checkbox" value="hazelnut" name="flavor"><label>Hazelnut</label></br>
+        <input type="checkbox" value="caramel" name="flavor"><label>Caramel</label></br>
+    <input type="checkbox" value="mocha" name="flavor"><label>Mocha</label></br>
+    <input type="checkbox" value="vanilla bean" name="flavor"><label>Vanilla Bean</label></br>
+        </fieldset>
+        <fieldset>
+            <legend><div class="number">6</div> Dairy?</legend>
+            <input type="radio" value="regular" name="cream"><label>Regular</label><br>
+            <input type="radio" value="half & half" name="cream"><label>Half & Half</label></br>
+        <input type="radio" value="almond milk" name="cream"><label>Almond Milk</label></br>
+    <input type="radio" value="soy milk" name="cream"><label>Soy Milk</label></br>
+    <input type="radio" value="none" name="cream"><label>None</label></br>
+        </fieldset>
+    <input class="button" type="submit" value="Espress Me Please">
+    </form>
+    </div>
+    <div class="order">
+        <h1>Thanks for your order!</h1>
+        <img src="https://i.imgur.com/O0oqbwc.jpg">
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

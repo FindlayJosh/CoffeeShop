@@ -47,3 +47,8 @@ Array.from(remove).forEach(function(element) {
     })
   }); 
 });
+
+const submitForm = () => {
+	document.querySelector(".main").style.display="none";
+	document.querySelector(".order").style.display="block";
+};

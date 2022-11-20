@@ -4,7 +4,7 @@ module.exports = function (app, passport, db) {
     const { ObjectId } = require('mongodb')
     // show the home page (will also have our login links)
     app.get('/', function (req, res) {
-        res.render('order.ejs');
+        res.render('superOrder.ejs');
     });
 
     app.get('/index', function (req, res) {
@@ -63,21 +63,6 @@ module.exports = function (app, passport, db) {
             res.send(result)
         })
     })
-
-    // app.put('/messagesDown', (req, res) => {
-    //   db.collection('messages')
-    //   .findOneAndUpdate({name: req.body.name, msg: req.body.msg}, {
-    //     $set: {
-    //       thumbUp:req.body.thumbUp - 1
-    //     }
-    //   }, {
-    //     sort: {_id: -1},
-    //     upsert: true
-    //   }, (err, result) => {
-    //     if (err) return res.send(err)
-    //     res.send(result)
-    //   })
-    // })
 
     app.delete('/orderDelete', (req, res) => {
         console.log(req.body._id)
