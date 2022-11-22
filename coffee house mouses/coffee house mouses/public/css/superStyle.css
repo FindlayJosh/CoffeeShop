@@ -1,7 +1,10 @@
 body {
 	font-family: 'Montserrat', sans-serif;
-	background: grey;
 	text-align: center;
+	background: black;
+	background-image: url(3525159.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .number {

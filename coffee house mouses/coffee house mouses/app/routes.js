@@ -4,11 +4,19 @@ module.exports = function (app, passport, db) {
     const { ObjectId } = require('mongodb')
     // show the home page (will also have our login links)
     app.get('/', function (req, res) {
-        res.render('superOrder.ejs');
+        res.render('index.ejs');
     });
 
     app.get('/index', function (req, res) {
         res.render('index.ejs');
+    });
+
+    app.get('/order', function (req, res) {
+        res.render('superOrder.ejs');
+    });
+
+    app.get('/submit', function (req, res) {
+        res.render('superOrder.ejs');
     });
 
 
@@ -36,6 +44,8 @@ module.exports = function (app, passport, db) {
         orderCollection.insertOne({
             name: req.body.name,
             coffee: req.body.coffee,
+            email: req.body.email,
+            phoneNumber: req.body.phoneNumber,
             size: req.body.size,
             temp: req.body.temp,
             cream: req.body.cream,
